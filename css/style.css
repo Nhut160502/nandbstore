@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*#Heading */
+
+.heading {
+    top: 0;
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    background-color:#353535;
+    z-index: 1;
+
+}
+
+/* header */
+
+.header{
+    height: 80px;
+    margin: 15px 0;
+    justify-content: space-around;
+}
+
+.header> a{
+    text-decoration: none;
+}
+
+.header__logo{
+    padding: 12px;
+    color: #ffff;
+    margin-top: 4px;
+    text-align: center;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    background-color: #c89979;
+}
+
+.header__logo:hover{
+    background-color: #c67641;
+}
+
+.header__search-box{
+    line-height: 80px;
+}
+
+.header__search-box .search {
+    width: 575px;
+    border: none;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.header__search-box .search-icon{
+    border: none;
+    height: 50px;
+    padding: 0 15px;
+    margin-left: -5px;
+    background-color: #c89979;
+
+}
+
+
+.header__icon-mini li{
+    font-size: 30px;
+    line-height: 80px;
+    display: inline-block;
+}
+
+.header__icon-mini i:hover{
+    color: #c67641;
+}
+
+.header__icon-mini li a{
+    text-decoration: none;
+    color: #c89979;
+}
+
+.header__icon-mini i{
+    margin-right: 15px;
+}
+
+
+/* navigation */
+
+.navi{
+    border-top: 1px solid #c89979;
+    justify-content: center;
+}
+
+.navi li{
+    list-style: none;
+}
+
+.header .search-icon:hover,
+.navi > li:hover > a{
+    color: #fff;
+    background-color: #c67641;
+}
+
+.navi li a{
+    padding: 0 30px;
+    font-size: 25px;
+    color: #c89979;
+    line-height: 70px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+.navi li:hover .navi__sub-navi{
+    display: block;
+}
+
+.navi .navi__sub-navi{
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+}
+
+.navi .navi__sub-navi{
+    min-width: 240px;
+}
+
+.navi .navi__sub-navi li:hover a{
+    background-color: #c67641;
+   color: #ffff;
+}
+
+.navi .navi__sub-navi li a{
+    display: block;
+    color:#c89979 ;
+    line-height: 50px;
+}
+
+
+
+
+/* slider */
+
+
+.slider img{
+    width: 100%;
+    margin-top: 180px;
+}
+
+
+/* Menu product */
+.menu-product.grid.wide {
+    margin-top: 150px;
+    border-bottom: 1px solid #c89979;
+}
+
+.new-product__text,
+.menu-product__text{
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #c89979;
+}
+
+.menu-product__list{
+}
+
+.image-menu-product{
+    width: 168px;
+}
+
+.menu-product__itemp{
+    text-align: center;
+    padding: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.menu-product__itemp a{
+    text-decoration: none;
+    color: #c89979;
+}
+
+.menu-product__itemp h1{
+}
+
+.menu-product__itemp button{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    display: none;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #c89979;
+    color: #fff;
+    border: none;
+}
+
+.menu-product__itemp:hover button{
+    display: block;
+    animation: growth linear 0.25s;
+}
+
+.menu-product__itemp:hover{
+   border:2px solid #c89979 ;
+   border-bottom: none;
+}
+
+.menu-product__itemp button:hover{
+    background-color: #c67641;
+}
+
+
+/* New-product */
+
+.new-product.grid.wide {
+    margin-top: 150px;
+    border-bottom: 1px solid #c89979;
+}
+
+.new-product__itemp{
+    text-align: center;
+    position: relative;
+    min-height: 480px;
+    padding: 30px 20px;
+    margin: 15px 0;
+    border: 1px solid #c89979;
+}
+
+.new-product__itemp img{
+    width: 80%;
+}
+
+.info-new-product__itemp{
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.btn-new-product__itemp{
+   position: absolute;
+   bottom: -1px;
+   width: 100%;
+   flex-direction: 2;
+}
+
+.btn-new-product__itemp .btn-2,
+.btn-new-product__itemp .btn-1{
+   background-color: #c89979;
+   /* border-bottom: none; */
+   border: none;
+   display: none;
+   color: white;
+   text-transform: uppercase;
+   padding: 10px 0;
+   width: 100%;
+}
+
+.btn-new-product__itemp .btn-2:hover,
+.btn-new-product__itemp .btn-1:hover{
+   background-color: #c67641;
+   cursor: pointer;
+}
+
+.new-product__list .new-product__itemp:hover{
+    border: 2px solid #c67641;
+}
+
+.new-product__list .new-product__itemp:hover .btn-1,
+.new-product__list .new-product__itemp:hover .btn-2{
+    display: block;
+    animation: growth linear 0.25s;
+}
+
+
+/* service */
+
+.service__list{
+    background-color: #c89979;
+}
+.service.grid.wide{
+    margin-top: 150px;
+}
+
+.service__itemp__body{
+    justify-content: center;
+    align-items: center;;
+    color: #fff;
+}
+
+.ervice__list__itemp{
+}
+
+
+.footer{
+    margin-top: 80p;
+    height:400px ;
+    background-color: bisque;
+}
+
+
+/* contact */
+
+.contact {
+    margin-top: 330px;
+
+}
+.contact.grid.wide {
+    margin-top: 330px;
+
+}
+
+.contact-title{
+    margin: 10px 0;
+}
+
+.contact-text{
+    font-size: 2=16px;
+}
+
+.contact-list{
+    margin-top: 80px;
+}
+
+.contact-list__itemp{
+    padding-bottom: 20px;
+}
+
+.contact-list__itemp .icon{
+    font-size: 30px;
+}
+
+
+/* <!--------------------------Cart-----------------------------> */
+
+.cart.grid.wide{
+    min-height: 1000px;
+    margin-top: 330px;
+}
+
+.cart-top li{
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.cart-top li a{
+    text-decoration: none;
+
+}
+
+
+/* --------------------Category-------------- */
+.category.grid.wide{
+    margin-top: 330px;
+}
+
+.cate-left{
+    border: 1px solid #c89979;
+}
+
+.cate-left h2{
+    border-bottom: 1px solid #c89979;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cate-left__sidebar li{
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid #c89979;
+}
+.cate-left__sidebar li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+.cate-left__sidebar a:hover{
+    color: #fff;
+    background-color: #c89979;
+}
+
+@keyframes growth {
+    from{
+        opacity: 0;
+        height: 0;
+    }
+    to{
+        opacity: 1;
+        height: 36px;
+    }
+}
+
+
+
+
+
