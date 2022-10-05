@@ -230,7 +230,7 @@
     min-height: 480px;
     padding: 30px 20px;
     margin: 15px 0;
-    border: 1px solid #c89979;
+    /* border: 1px solid #c89979; */
 }
 
 .new-product__itemp img{
@@ -245,7 +245,7 @@
 
 .btn-new-product__itemp{
    position: absolute;
-   bottom: -1px;
+   bottom: 0;
    width: 100%;
    flex-direction: 2;
 }
@@ -253,7 +253,6 @@
 .btn-new-product__itemp .btn-2,
 .btn-new-product__itemp .btn-1{
    background-color: #c89979;
-   /* border-bottom: none; */
    border: none;
    display: none;
    color: white;
